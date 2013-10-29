@@ -1,0 +1,7 @@
+DI.Contributor.ConstructorModelInspector.pas
+DI.Descriptor.Defaults.pas
+DI.Descriptor.Lifestyle.pas
+DI.Descriptor.Services.pas
+DI.Lifestyle.pas
+DI.LifestyleManager.Base.pas
+DI.LifestyleManager.Singleton.pas

@@ -1,0 +1,88 @@
+package Ambrosia.Core;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl;
+
+contains
+  Ambrosia.Container in 'Ambrosia.Container.pas',
+  Ambrosia.LifestyleManager.Base in 'Lifestyle\Ambrosia.LifestyleManager.Base.pas',
+  Ambrosia.Enumerable in 'Ambrosia.Enumerable.pas',
+  Ambrosia.Resolver in 'Resolvers\Ambrosia.Resolver.pas',
+  Ambrosia.Types in 'Ambrosia.Types.pas',
+  Ambrosia.Kernel.Default in 'Ambrosia.Kernel.Default.pas',
+  Ambrosia.LifestyleManager.Singleton in 'Lifestyle\Ambrosia.LifestyleManager.Singleton.pas',
+  Ambrosia.LifestyleManager.Transient in 'Lifestyle\Ambrosia.LifestyleManager.Transient.pas',
+  Ambrosia.Burden in 'Ambrosia.Burden.pas',
+  Ambrosia.ComponentRegistration in 'Ambrosia.ComponentRegistration.pas',
+  Ambrosia.ComponentActivator.Default in 'Activators\Ambrosia.ComponentActivator.Default.pas',
+  Ambrosia.ComponentActivator.Base in 'Activators\Ambrosia.ComponentActivator.Base.pas',
+  Ambrosia.ConstructorCandidate in 'Ambrosia.ConstructorCandidate.pas',
+  Ambrosia.DependencyModel in 'Ambrosia.DependencyModel.pas',
+  Ambrosia.Interfaces in 'Ambrosia.Interfaces.pas',
+  Ambrosia.LifestyleGroup in 'Ambrosia.LifestyleGroup.pas',
+  Ambrosia.ComponentModelBuilder in 'Ambrosia.ComponentModelBuilder.pas',
+  Ambrosia.Descriptor.Defaults in 'Descriptors\Ambrosia.Descriptor.Defaults.pas',
+  Ambrosia.Descriptor.Lifestyle in 'Descriptors\Ambrosia.Descriptor.Lifestyle.pas',
+  Ambrosia.ConstructorModelInspector in 'Inspectors\Ambrosia.ConstructorModelInspector.pas',
+  Ambrosia.NamingSubsystem in 'Subsystems\Ambrosia.NamingSubsystem.pas',
+  Ambrosia.HandlerFactory in 'Ambrosia.HandlerFactory.pas',
+  Ambrosia.Handlers in 'Ambrosia.Handlers.pas',
+  Ambrosia.Utils in 'Utilities\Ambrosia.Utils.pas',
+  Ambrosia.Descriptor.Services in 'Descriptors\Ambrosia.Descriptor.Services.pas',
+  Ambrosia.ReleasePolicy in 'Ambrosia.ReleasePolicy.pas',
+  Ambrosia.CreationContext in 'Context\Ambrosia.CreationContext.pas',
+  Ambrosia.ResolutionContext in 'Context\Ambrosia.ResolutionContext.pas',
+  Ambrosia.GenericForwarders in 'Ambrosia.GenericForwarders.pas',
+  Ambrosia.Reflection in 'Utilities\Ambrosia.Reflection.pas',
+  Ambrosia.Configuration in 'Ambrosia.Configuration.pas',
+  Ambrosia.Descriptor.CustomDependency in 'Descriptors\Ambrosia.Descriptor.CustomDependency.pas',
+  Ambrosia.Lifestyle.Extensions in 'Lifestyle\Ambrosia.Lifestyle.Extensions.pas',
+  Ambrosia.Lifestyle.CallContextLifetimeScope in 'Lifestyle\Ambrosia.Lifestyle.CallContextLifetimeScope.pas',
+  Ambrosia.Descriptor.ExtendedProperties in 'Descriptors\Ambrosia.Descriptor.ExtendedProperties.pas',
+  Ambrosia.LifestyleManager.Scoped in 'Lifestyle\Ambrosia.LifestyleManager.Scoped.pas',
+  Ambrosia.LifetimeScopeAccessor in 'Lifestyle\Ambrosia.LifetimeScopeAccessor.pas',
+  Ambrosia.ThreadScopeAccessor in 'Lifestyle\Ambrosia.ThreadScopeAccessor.pas',
+  Ambrosia.ScopeCache in 'Lifestyle\Ambrosia.ScopeCache.pas',
+  Ambrosia.DefaultLifetimeScope in 'Lifestyle\Ambrosia.DefaultLifetimeScope.pas',
+  Ambrosia.CombinedDicitonary in 'Utilities\Ambrosia.CombinedDicitonary.pas',
+  Ambrosia.Attributes in 'Ambrosia.Attributes.pas',
+  Ambrosia.BaseAttributes in 'Core\Ambrosia.BaseAttributes.pas',
+  Ambrosia.LifestyleModelInspector in 'Inspectors\Ambrosia.LifestyleModelInspector.pas',
+  Ambrosia.SegmentedList in 'Utilities\Ambrosia.SegmentedList.pas',
+  Ambrosia.Interception in 'Interception\Ambrosia.Interception.pas',
+  Ambrosia.ArrayUtils in 'Utilities\Ambrosia.ArrayUtils.pas',
+  Ambrosia.SortedDictionary in 'Utilities\Ambrosia.SortedDictionary.pas',
+  Ambrosia.InterceptorReference in 'Interception\Ambrosia.InterceptorReference.pas',
+  Ambrosia.InterceptorInspector in 'Inspectors\Ambrosia.InterceptorInspector.pas',
+  Ambrosia.DefaultProxyFactory in 'Proxy\Ambrosia.DefaultProxyFactory.pas';
+
+end.
+
